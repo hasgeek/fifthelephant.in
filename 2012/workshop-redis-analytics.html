@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js no-userlogin"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>The Redis way of Analytics — The Fifth Elephant</title>
+  <meta name="DC.title" content="The Redis way of Analytics"/>
+  <meta name="description" content="Redis is one the fastest key-value pair, noSQL, in-memory database available on market, and many companies like disqus uses Redis for analytics. The workshop aims at enabling attendees quick prototyping, and designing fast and efficient analytic solutions with Redis and Python. Workshop will be unveiling the other side of Hadoop, with instant analytics of data.">
+  <meta name="author" href="/humans.txt">
+
+  
+  <link rel="icon" href="https://fifthelephant.in/favicon.ico"/>
+  
+
+  <link rel="alternate" type="application/atom+xml"  title="The Fifth Elephant" href="https://fifthelephant.in/feed" />
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="../static/css/packed.css"/>
+  
+    <link rel="stylesheet" href="../_themes/fifthelephant/js/leaflet/leaflet.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant/css/app.css.packed.css"/>
+    
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic,400,600">
+  <script src="../_baseframe/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="https://use.typekit.com/gsd7mbs.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="image_src" href="../_baseframe/img/logo@2x.png">
+  
+</head>
+<body>
+  <div id="root">
+    <!-- headerbox -->
+    
+<header class="header">
+  <div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="workshop-redis-analytics.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="../index.html">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+    </div>
+  </div>
+  <div class="container masthead-container">
+    <div id="masthead-short">
+      <h1><span class="h1-the">The</span> <span class="h1-fifth">Fifth</span> <span class="h1-elephant">Elephant</span></h1>
+    </div>
+  </div>
+  <div class="main-navbar">
+    <div class="container">
+      <ul class="nav" id="main-nav">
+        <li><a href="../2013.html">2013 Edition</a></li>
+        <li><a href="../2012.html">2012 Edition</a></li>
+        <li><a href="../blog.html">Event Blog</a></li>
+        <li><a href="schedule.html">2012 Schedule</a></li>
+        <li><a href="data-workshops.html">2012 Workshops</a></li>
+        <li class="register"><a href="register.html">Register for the Event</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <!-- /headerbox -->
+
+    <div class="container">
+    
+  
+<div class="row page-top">
+  <div class="span6">
+    <div class="page-header"><h2>The Redis way of Analytics</h2></div>
+    <p>
+      <strong>When:</strong> July 26, 2012, 11:15 AM &ndash; 01:15 PM<br>
+      <strong>Where:</strong> <a href="workshop-redis-analytics.html#map-teri">The Energy &amp; Resources Institute</a>, 4th Main, 2nd Cross, Domlur 2nd Stage, Bangalore – 560 071
+    </p>
+    <p><em>by</em> <strong>Anoop Thomas</strong></p>
+<p>Redis is one the fastest key-value pair, noSQL, in-memory database available on market, and many companies like disqus uses Redis for analytics. <strong>The workshop aims at enabling attendees quick prototyping, and designing fast and efficient analytic solutions with Redis and Python</strong>. Workshop will be unveiling the other side of Hadoop, with instant analytics of data.</p>
+<p>The workshop will include:</p>
+<ul>
+<li>Basics of Redis</li>
+<li>Basics of Python</li>
+<li>Develop a demo application with python and redis live along with the attendees, and show real-time analytics using Django</li>
+<li>Discussion</li>
+<li>Conclusion</li>
+</ul>
+<h3>Requirements</h3>
+<p>A laptop, with python, redis-py and redis installed. Also, some exposure to Python and Redis will be great.</p>
+<h3>Facilitator bio</h3>
+<p>Anoop Thomas Mathew is a Python enthusiast with two years of experience in the industry. With the title of Director of R&amp;D, <a href="http://www.profoundis.com/">Profoundis Pvt. Ltd.</a>, he created and manages the team behind <a href="http://www.profoundis.com/?link=services&amp;data=mo">Momentous Business Suite</a>, a complete solution for SME analytics.</p>
+  </div>
+  <div class="span6">
+    <div id="map" class="map"></div>
+    
+          <ul class="pager">
+            <li class="previous">
+              <a href="workshop-excel.html"><i class="icon-hand-left"></i> Visualization using Excel</a>
+            </li>
+            <li class="next">
+              <a href="workshop-data-wrangler.html">Become a Data Wrangler <i class="icon-hand-right"></i></a>
+            </li>
+          </ul>
+    <div class="box section">
+      <h3>RSVP</h3>
+        <p>
+          The venue has limited capacity. Interested in attending? Please login. You can use your existing
+          Twitter or Google account, and if you have previously voted on a
+          session proposal or attended a hacknight, you already have a
+          HasGeek account.
+        </p>
+        <p>
+          <a href="https://fifthelephant.in/login" class="btn btn-success">Login with Twitter, Google or HasGeek id</a>
+        </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <!-- /container -->
+    <div id="root_footer"></div>
+  </div>
+  <!-- /root -->
+  <footer>
+    <div class="footer-inner">
+      <div class="container">
+        <div class="footer-bar"></div>
+        <span>The Fifth Elephant is a conference by <a href="http://hasgeek.com/">HasGeek</a>. Copyright &copy; 2010-12. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Included JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    if (typeof jQuery === 'undefined')
+      document.write('<script type="text/javascript" src="../_baseframe/js/jquery-1.8.3.min.js"><\/script>');
+  </script>
+  <script type="text/javascript" src="../static/js/packed.js"></script>
+    <script type="text/javascript" src="../_themes/fifthelephant/js/jquery.smooth-scroll.min.js.packed.js"></script><script type="text/javascript" src="../_themes/fifthelephant/js/jquery.twitter.js.packed.js"></script><script type="text/javascript" src="../_themes/fifthelephant/js/leaflet/leaflet.js.packed.js"></script><script type="text/javascript" src="../_themes/fifthelephant/js/app.js.packed.js"></script><script type="text/javascript">
+     var _gaq = [['_setAccount', 'UA-19123154-20'], ['_trackPageview']];
+     (function(d, t) {
+      var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+     })(document, 'script');
+    </script>
+  
+    <script type="text/javascript">
+      $(function() {
+        $("#rsvp").ajaxForm({
+          target: '#rsvp',
+          replaceTarget: true,
+          beforeSubmit: function(formdata, form, options) {
+            form.find('input[type="submit"]').prop('disabled', true).addClass('submit-disabled');
+            form.find('button[type="submit"]').prop('disabled', true).addClass('submit-disabled');
+            form.find('.loading').removeClass('hidden');
+            return true;
+          },
+          error: function(ref_id, xhr, status, errMsg) {
+            var form = $("#rsvp");
+            form.find('input[type="submit"]').prop('disabled', false).removeClass('submit-disabled');
+            form.find('button[type="submit"]').prop('disabled', false).removeClass('submit-disabled');
+            form.find('.loading').addClass('hidden');
+            form.append('<div class="alert alert-danger fade in"><a href="workshop-redis-analytics.html#" class="close" data-dismiss="alert">&times;</a> An error occured when submitting the form</div>');
+          } // No comma or semicolon here
+        });
+      });
+    </script>
+  
+  <script type="text/javascript">
+    $(function() {
+      var map = new L.Map('map');
+      var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',
+        subDomains = ['otile1','otile2','otile3','otile4'],
+        cloudmadeAttrib = '<a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>';
+      var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttrib, subdomains: subDomains});
+
+      map.scrollWheelZoom.disable();
+
+      var open_marker = function(marker) {
+        return function(e) {
+          map.panTo(marker['_latlng']);
+          marker.openPopup();
+          e.preventDefault();
+        };
+      };
+
+      
+        var marker_nimhans = new L.Marker(new L.LatLng(12.9431, 77.5969));
+        map.addLayer(marker_nimhans);
+        marker_nimhans.bindPopup("Nimhans Convention Centre");
+        $('a[href="#map-nimhans"]').click(open_marker(marker_nimhans));
+        var marker_cis = new L.Marker(new L.LatLng(12.9647, 77.6375));
+        map.addLayer(marker_cis);
+        marker_cis.bindPopup("Centre for Internet and Society");
+        $('a[href="#map-cis"]').click(open_marker(marker_cis));
+        var marker_teri = new L.Marker(new L.LatLng(12.9636, 77.6380));
+        map.addLayer(marker_teri);
+        marker_teri.bindPopup("The Energy &amp; Resources Institute");
+        $('a[href="#map-teri"]').click(open_marker(marker_teri));
+        var marker_amiworks = new L.Marker(new L.LatLng(18.5388, 73.8293));
+        map.addLayer(marker_amiworks);
+        marker_amiworks.bindPopup("AmiWorks");
+        $('a[href="#map-amiworks"]').click(open_marker(marker_amiworks));
+        var marker_startupcentre = new L.Marker(new L.LatLng(13.0685, 80.2571));
+        map.addLayer(marker_startupcentre);
+        marker_startupcentre.bindPopup("The Startup Centre");
+        $('a[href="#map-startupcentre"]').click(open_marker(marker_startupcentre));
+        map.setView(marker_teri['_latlng'], 15).addLayer(cloudmade);
+        marker_teri.openPopup();
+      $('a[href^="#map-"]').tooltip({title: "Show on map"});
+    });
+  </script>
+
+
+</body>
+</html>
