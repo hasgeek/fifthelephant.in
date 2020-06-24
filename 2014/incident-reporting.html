@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>The Fifth Elephant — Procedure for Incident Reporting</title>
+  <meta name="description" content="The Fifth Elephant is a community-powered conference on the big data ecosystem, covering the technology and its applications in a range of industries.">
+  <meta name="author" content="HasGeek and friends">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+  <meta property="og:title" content="The Fifth Elephant"/>
+  <meta property="og:image" content="https://fifthelephant.in/_themes/fifthelephant2014/img/logo.png"/>
+  <meta property="og:url" content="https://fifthelephant.in/2014/incident-reporting"/>
+  <meta property="og:description" content="The Fifth Elephant is a community-powered conference on the big data ecosystem, covering the technology and its applications in a range of industries."/>
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://fifthelephant.in/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="https://fifthelephant.in/favicon.ico">
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/normalize.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/js/vendor/leaflet/leaflet.ie.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/js/vendor/leaflet/leaflet.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/typography.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/layout.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/main.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/objects.css.packed.css"/>
+    <link rel="stylesheet" href="../_themes/fifthelephant2014/css/2x.css.packed.css"/>
+    
+
+  <script src="../_themes/fifthelephant2014/js/libs/modernizr-2.5.3.js"></script>
+    <script type="text/javascript" src="https://use.typekit.net/ftd4kro.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="../_baseframe/css/networkbar.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic,400,600">
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+  
+  
+
+</head>
+<body>
+<div class="hg-bar-holder fill-white"><div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="incident-reporting.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="https://fifthelephant.in/">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+    </div>
+  </div></div>
+<div id="page">
+
+<header class="clearfix">
+<div class="banner internal fill-beige resetcoords layer-one clearfix push-one-top centered">
+    <h2 class="home-link calm large centered"><a class="link-white-translucent-hover brown" href="index.html">The Fifth Elephant</a></h2>
+    <p class="ticket-link body-type event-tickets calm centered">
+      <a
+        class="buy-tickets button small-button"
+        title="Fifth Elephant 2014 Tickets on DoAttend"
+        href="http://fifthel.doattend.com/">
+        <span class="conference-dates">Jul 23 - 26, 2014 / </span>Buy Tickets
+      </a>
+    </p>
+    
+    
+    <div class="main-nav space-one-top space-line-bottom">
+      <nav class="nospace">
+        <p class="nav-line secondary centered nospace clearfix">
+          <span class="sub-group community">
+            <a href="community.html" class="darkblue" >Community</a>
+            <span class="nav-line-spacer orange serif-type italic">powered</span>
+            <span class="nav-line-spacer orange serif-type italic">bigdata</span>
+          </span>
+          <span class="sub-group conference">
+            <a href="conference.html" class="darkblue" >conference</a>
+            <span class="nav-line-spacer orange serif-type amp">&amp;</span>
+            <a href="workshops.html" class="darkblue" >workshops</a>
+          </span>
+          <span class="sub-group bangalore">
+            <span class="nav-line-spacer orange serif-type italic">in&nbsp;namma</span>
+            <a href="venue.html" title="View location in Google Maps" class="darkblue" >Bangalore</a>
+          </span>
+        </p>
+      </nav>
+    </div>
+    
+    
+  
+  <hr class="half center-block space-two">
+  <p class="regular clearboth centered center-block space-two faded all-caps title-type"><span class="wrap-mobile">This document is a part of</span> <span class="wrap-mobile"><a href="https://fifthelephant.in/2013/code-of-conduct" class="dark nopad">The Code of Conduct</a></span></p>
+
+
+
+    
+    
+</div><!-- .banner -->
+</header>
+
+
+<section id="sticky-offset" class="clearfix">
+  <div id="sticky-nav" class="sticky-nav fill-beige clearfix">
+      <div class="sticky-main-bar clearfix"><div class="on-sticky-content sticky-width clearfix"></div></div>
+      <div class="sticky-page-bar clearfix"><div class="on-sticky-content sticky-width clearfix"></div></div>
+  </div>
+</section>
+
+<section id="content" class="clearfix">
+
+<section class="preface legible space-six pad-one">
+  <h1 class="centered calm large">Attendee Procedure for Handling&nbsp;Harassment</h1>
+  <article class="regular measure-10words prose center-block">
+    <header class="secondary faded space-three-bottom">
+      <p>This procedure has been adopted from the Ada Initiative's guide titled “<a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports">Conference anti-harassment/Responding to Reports</a>”.</p>
+    </header>
+    <ol>
+      <li>
+        <p>All conference staff and programme committee members will be wearing a badge with the word “CREW” on it. The crew will be prepared to handle the incident.  Our crew members are informed of the <a href="https://fifthelephant.in/2013/code-of-conduct">code of conduct policy</a> and guide for handling harassment at the conference. <em>There will be a mandatory crew meeting onsite at the conference when this will be reiterated.</em></p>
+      </li>
+      <li>
+        <p>Report the harassment incident to a crew member. All reports will remain confidential. A written or emailed report is preferred as it will record the facts for later reference.</p>
+        <p>When reporting the event to the crew, try to gather as much information as available, but do not interview people about the incident. </p>
+        <p>The important information consists of:</p>
+        <ul>
+          <li>Identifying information (name) of the participant doing the harassing</li>
+          <li>The behaviour that was in violation</li>
+          <li>The approximate time of the behaviour (if different than the time the report was made)</li>
+          <li>The circumstances surrounding the incident</li>
+          <li>Other people involved in the incident</li>
+        </ul>
+        <p>Crew members will assist you in wrting the report. They are well informed on how to deal with the incident and how to proceed further.</p>
+      </li>
+      <li>
+        <p>Involve police only at a victim's request.</p>
+      </li>
+    </ol>
+    <p>A listing of <a href="https://fifthelephant.in/2013/about/staff/">The Fifth Elephant organizers and HasGeek staff is located here</a>, including contact phone numbers. If possible, all reports should be made directly to <a href="mailto:zainab@hasgeek.com">Zainab Bawa</a> (Lead Organizer) or <a href="mailto:info@hasgeek.com">HasGeek</a></p>
+  </article>
+</section>
+
+
+</section>
+
+<footer class="clearfix fill-light highlight-links push-four-bottom">
+  
+  <section id="sponsors" class="regular clearfix space-two-top pad-one fill-light">
+    <div class="sponsors-compact center-block space-three-top space-four-bottom v-middle clearfix">
+    <h3 class="legible centered nospace-top space-one-bottom ultrafaded">Sponsors</h3>
+    
+    
+      
+        
+      
+      
+        
+          <section class="sponsor-cat flushleft platinum clearfix">
+            <h5 class="all-caps"><span>Platinum</span></h5>
+            <ul class="thumbnail-columns regular flushleft clearboth clearfix fill-white">
+        
+        <li>
+          <a href="http://www.aerospike.com/" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/900606d3ae744d9bb4d01d46a6af9bac.png" alt="Aerospike">
+          </a>
+        </li>
+        
+            </ul>
+          </section>
+        
+      
+    
+      
+        
+      
+      
+        
+          <section class="sponsor-cat flushleft gold clearfix">
+            <h5 class="all-caps"><span>Gold</span></h5>
+            <ul class="thumbnail-columns thumbnail-columns-three regular flushleft clearboth clearfix fill-white">
+        
+        <li>
+          <a href="http://www.media.net/" class="contain-height">
+            <img src="https://imgee.s3.amazonaws.com/imgee/205beaeb541e47cfa06e654fe35a12c4.png" alt="Media.net">
+          </a>
+        </li>
+        
+            </ul>
+          </section>
+        
+      
+    
+      
+        
+      
+      
+        
+          <section class="sponsor-cat flushleft vc-sponsor clearfix">
+            <h5 class="all-caps"><span>VC Sponsor</span></h5>
+            <ul class="thumbnail-columns thumbnail-columns-three regular flushleft clearboth clearfix fill-white">
+        
+        <li>
+          <a href="http://www.nexusvp.com/" class="contain-height">
+            <img src="https://imgee.s3.amazonaws.com/imgee/960dc0d707d74518b9519ae9de617d9e_w300_h120.png" alt="Nexus Venture Partners">
+          </a>
+        </li>
+        
+            </ul>
+          </section>
+        
+      
+    
+      
+        
+      
+      
+        
+          <section class="sponsor-cat flushleft silver clearfix">
+            <h5 class="all-caps"><span>Silver</span></h5>
+            <ul class="thumbnail-columns thumbnail-columns-five regular flushleft clearboth clearfix fill-white">
+        
+        <li>
+          <a href="https://github.com/Flipkart" class="contain-height">
+            <img src="https://imgee.s3.amazonaws.com/imgee/8fabd6a818364efdae5db4d20adefa59_w300_h95.png" alt="Flipkart">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://bloomreach.com/" class="contain-width">
+            <img src="https://images.hasgeek.com/embed/file/cc4f788c148b4aee83b87e335f706df9" alt="BloomReach">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="incident-reporting.html#" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/d425b2a136f2443ba000d535c01a36f7.png" alt=" ">
+          </a>
+        </li>
+        
+            </ul>
+          </section>
+        
+      
+    
+      
+        
+      
+      
+        
+          <section class="sponsor-cat flushleft bronze clearfix">
+            <h5 class="all-caps"><span>Bronze</span></h5>
+            <ul class="thumbnail-columns thumbnail-columns-five regular flushleft clearboth clearfix fill-white">
+        
+        <li>
+          <a href="http://activesphere.com/" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/2f8c63287aea4737bfdf313c396aa941_w300_h71.png" alt="ActiveSphere">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://myntra.com/" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/c185ed4162a34704af8ab63300cc7817.png" alt="Myntra">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://engineering.wingify.com/" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/f4327c262af94bf189f168c46c80e677.png" alt="Wingify">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://www.qubole.com/" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/2e61f5f4d8ca445b843e3456877563c1.png" alt="Qubole">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://www.ca.com/us/careers.aspx" class="contain-width">
+            <img src="https://imgee.s3.amazonaws.com/imgee/2f01973909a143c185e28baa1b6ede9e_w120_h100.png" alt="CA Technologies">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://capillarytech.com/" class="contain-width">
+            <img src="https://images.hasgeek.com/embed/file/f69cb3f5eecc4f22b0d9e36ecf3712e0?size=1024x768" alt="Capillary">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://www.target.com/india" class="contain-width">
+            <img src="https://images.hasgeek.com/embed/file/eecb809cbc464f178268d60b3c9cc332?size=1024x768" alt="Target Corporation India">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://aws.amazon.com/" class="contain-width">
+            <img src="https://images.hasgeek.com/embed/file/3718231ea9244c2a8b991fb991a2c59e?size=640x480" alt="Amazon Web Services">
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          <a href="http://www.intuit.in/" class="contain-width">
+            <img src="https://images.hasgeek.com/embed/file/1b3073c5812543e28ed5f908395d60ab" alt="Intuit">
+          </a>
+        </li>
+        
+            </ul>
+          </section>
+        
+      
+    
+    </div>
+  </section>
+  
+  
+  
+  <p class="centered secondary space-two-top space-half-bottom copyright center-block"><span class="wrap-mobile">For further information / sponsorship:</span> <span class="wrap-mobile"><script type="text/javascript">
+  //<![CDATA[
+  <!--
+  var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+  "=48){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+  ".substr(0,ol);}f(\")521,\\\"771\\\\syhb100\\\\_220\\\\000\\\\t\\\\010\\\\r\\"+
+  "\\410\\\\710\\\\000\\\\200\\\\200\\\\630\\\\200\\\\t\\\\530\\\\630\\\\720\\" +
+  "\\600\\\\220\\\\t\\\\v]NHU700\\\\x630\\\\QRAs}=>G(+,#.##%\\\"\\\\)!6%7`n~+T" +
+  ":`gr620\\\\]530\\\\GZVXI720\\\\ZH630\\\\530\\\\220\\\\^400\\\\310\\\\010\\\\"+
+  "310\\\\030\\\\310\\\\100\\\\(010\\\\000\\\\310\\\\r\\\\]@=420\\\\91.~700\\\\"+
+  "g*+6:6tq610\\\\%>.&=)'710\\\\yzb.1\\\"\\\\*400\\\\qr230\\\\QQP^r400\\\\LTS_" +
+  "VFA610\\\\]@M300\\\\GNON[FNeKELH230\\\\pjquzw;D*ppf{2p,-&c`n~`zp(qjfotc120\\"+
+  "\\130\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;72" +
+  "1=%y;2=*y))y+521(>i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f " +
+  "noitcnuf\")"                                                                 ;
+  while(x=eval(x));
+  //-->
+  //]]>
+  </script>
+  </span></p>
+  
+  <p class="centered secondary space-half-top space-line-bottom copyright center-block"><span class="wrap-mobile"><a href="https://fifthelephant.in/" class="spooky">The Fifth Elephant</a> is a conference by <a href="http://hasgeek.com">HasGeek</a>.</p>
+  
+  <p class="centered tiny space-half-top faded center-block attribution">Copyright © 2010-13. All rights reserved.</p>
+  
+  <nav class="tiny space-three all-caps semi-bold">
+    <ul class="centered">
+      <li class="inline"><a href="http://twitter.com/fifthel">Twitter</a></li>
+      <li class="inline"><a href="https://fifthelephant.in/blog">Blog</a></li>
+      <li class="inline"><a href="code-of-conduct.html">Code of Conduct</a></li>
+    </ul>
+  </nav>
+  
+</footer>
+
+
+</div><!-- #page -->
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<script>window.jQuery || document.write('<script src="../_themes/fifthelephant2014/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="../_themes/fifthelephant2014/js/libs/underscore.min.js.packed.js"></script>
+  <script src="../_themes/fifthelephant2014/js/plugins.js.packed.js"></script>
+  <script src="../_themes/fifthelephant2014/js/flipboard.js.packed.js"></script>
+  <script src="../_themes/fifthelephant2014/js/vendor/leaflet/leaflet.js.packed.js"></script>
+  <script src="../_themes/fifthelephant2014/js/script.js.packed.js"></script>
+  
+
+
+
+<script>
+// Google Analytics
+if (location.hostname == 'fifthelephant.in') {
+  var _gaq=[['_setAccount','UA-19123154-20'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+}
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+<!-- Scrollback.io -->
+<!-- <script>
+  window.scrollback = {
+    streams:["hasgeek"],
+    theme: 'light',ticker: false
+  };
+
+  /***** don't edit below *****/
+  (function(d,s,h,e){e=d.createElement(s);e.async=1;
+  e.src=h+'/client.min.js';scrollback.host=h;
+  d.getElementsByTagName(s)[0].parentNode.appendChild(e);}
+  (document,'script',(location.protocol=="https:"?"https:":"http:")+'//scrollback.io'));
+</script> -->
+
+</body>
+</html>
