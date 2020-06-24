@@ -1,0 +1,20 @@
+{
+  "name": "The Fifth Elephant",
+  "short_name": "The Fifth Elephant",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/?utm_source=app_homescreen",
+  
+  "theme_color": "#498f94",
+  
+  "background_color": "#FAFAFA",
+  "description": "India’s most renowned data science conference. Discuss the most cutting edge developments in the fields of machine learning, data science and technology that power data collection and analysis.",
+  
+  "icons": [
+    
+    {"src":"images/touch/fifthelephant-icon-192.png","sizes":"192x192","type":"image/png"}
+    
+    
+  ]
+  
+}
